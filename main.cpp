@@ -1,14 +1,14 @@
 #include <iostream>
 #include <string>
 #include "utils.h"
+using namespace std;
 
 void printWelcomeMessage() {
-    std::cout << "      Welcome to Git !       " << std::endl;
+    cout << "Welcome to Git !" << endl;
 }
 
-
 void greetUser() {
-    std::cout << "Hello, Developer!" << std::endl;
+    cout << "Hello, Developer!" << endl;
 }
 
 int addNumbers(int a, int b) {
@@ -19,19 +19,25 @@ int main() {
     printWelcomeMessage();
     greetUser();
 
-    int num1 = 5;
-    int num2 = 10;
-    int result = addNumbers(num1, num2);
+    string username;
+    cout << "Enter your username: ";
+    cin >> username;
 
-    std::string testUser = "ni lo";
-    if (isValidUsername(testUser)) {
-        std::cout << "Username is valid." << std::endl;
+    if (isValidUsername(username)) {
+        cout << "Username is valid." << endl;
     } else {
-        std::cout << "Username is invalid." << std::endl;
+        cout << "Username is invalid." << endl;
     }
 
-    std::cout << "The sum of " << num1 << " and " << num2 << " is: " << result << std::endl;
-    std::cout << "Program finished successfully." << std::endl;   
+    int num1, num2;
+    cout << "Enter first number: ";
+    cin >> num1;
+    cout << "Enter second number: ";
+    cin >> num2;
 
+    int result = addNumbers(num1, num2);
+    cout << "The sum of " << num1 << " and " << num2 << " is: " << result << endl;
+
+    cout << "Program finished successfully." << endl;
     return 0;
 }
