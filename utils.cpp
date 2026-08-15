@@ -6,7 +6,7 @@ bool isValidUsername(string username) {
     if (username.length() < 3) {
         return false;
     }
-    return true;
+
     for (char c : username) {
         if (c == ' ') {
             return false;

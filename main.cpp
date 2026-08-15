@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include "utils.h"
 
 void printWelcomeMessage() {
     std::cout << "      Welcome to Git !       " << std::endl;
@@ -22,8 +23,15 @@ int main() {
     int num2 = 10;
     int result = addNumbers(num1, num2);
 
+    std::string testUser = "ni lo";
+    if (isValidUsername(testUser)) {
+        std::cout << "Username is valid." << std::endl;
+    } else {
+        std::cout << "Username is invalid." << std::endl;
+    }
+
     std::cout << "The sum of " << num1 << " and " << num2 << " is: " << result << std::endl;
-    std::cout << "Program finished successfully." << std::endl;
+    std::cout << "Program finished successfully." << std::endl;   
 
     return 0;
 }
