@@ -16,3 +16,10 @@ and recovery techniques.
 - Linux/Unix environment
 
 Clone the repository and enter the project directory before compiling the program.
+
+## Utils Module
+Provides username validation used across the portal. It checks for whitespaces and
+username length
+
+Also User Input is set for username and for the addition of  two numbers inside the 
+main program
