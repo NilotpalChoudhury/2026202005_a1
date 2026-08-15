@@ -7,4 +7,10 @@ bool isValidUsername(string username) {
         return false;
     }
     return true;
+    for (char c : username) {
+        if (c == ' ') {
+            return false;
+        }
+    }
+    return true;
 }
