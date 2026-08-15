@@ -23,3 +23,9 @@ username length
 
 Also User Input is set for username and for the addition of  two numbers inside the 
 main program
+
+## Project Structure
+
+The `data/` directory contains supporting modules. Files in this project
+have been renamed and reorganized over time using `git mv` to preserve
+history — see `git log --follow` on any moved file for full lineage.
