@@ -1,0 +1,16 @@
+#include "utils.h"
+#include <iostream>
+using namespace std;
+
+bool isValidUsername(string username) {
+    if (username.length() < 3) {
+        return false;
+    }
+
+    for (char c : username) {
+        if (c == ' ') {
+            return false;
+        }
+    }
+    return true;
+}
