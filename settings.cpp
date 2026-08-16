@@ -4,7 +4,7 @@ using namespace std;
 
  void changeLanguage(string language) {
     if (language.empty()) {
-        cout << "Invalid language: cannot be empty." << endl;
+        cout << "Please provide a language" << endl;
         return;
     }
     if (language.length() > 20) {
