@@ -4,7 +4,7 @@ using namespace std;
 
  void changeLanguage(string language) {
     if (language.empty()) {
-        cout << "No language specified, defaulting to English" << endl
+        cout << "No language specified, defaulting to English" << endl;
         return;
     }
     if (language.length() > 20) {
