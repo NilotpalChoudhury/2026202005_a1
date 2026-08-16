@@ -32,3 +32,6 @@ history — see `git log --follow` on any moved file for full lineage.
 
 ## Login Module
 Handles username and password validation for user login.
+
+## Profile Module
+Displays student name and roll number.
