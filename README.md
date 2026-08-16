@@ -38,3 +38,6 @@ Displays student name and roll number.
 
 ## Dashboard Module
 Calculates and displays a student's average grade and gives him a grading
+
+## Settings Module
+Allows changing the display language preference.
