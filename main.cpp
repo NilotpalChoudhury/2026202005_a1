@@ -19,15 +19,11 @@ int main() {
     printWelcomeMessage();
     greetUser();
 
-    string username;
+    string username, password;
     cout << "Enter your username: ";
     cin >> username;
-
-    if (isValidUsername(username)) {
-        cout << "Username is valid." << endl;
-    } else {
-        cout << "Username is invalid." << endl;
-    }
+    cout << "Enter your password: ";
+    cin >> password;
 
     int num1, num2;
     cout << "Enter first number: ";
