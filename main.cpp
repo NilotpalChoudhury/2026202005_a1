@@ -16,6 +16,19 @@ void greetUser() {
     cout << "Hello, Developer!" << endl;
 }
 
+int displayMenu() {
+    int choice;
+
+    cout << "\n===== Student Portal Menu =====" << endl;
+    cout << "1. Profile" << endl;
+    cout << "2. Dashboard" << endl;
+    cout << "3. Settings" << endl;
+    cout << "Enter your choice: ";
+    cin >> choice;
+
+    return choice;
+}
+
 int main() {
     printWelcomeMessage();
     greetUser();
@@ -27,28 +40,48 @@ int main() {
     cin >> password;
 
     login(username, password);
+   
+        int choice = displayMenu();
+        switch (choice)
+	{
+        case 1: 
+  	     {
+            string name;
+            int rollNumber;
 
-    string name;
-    int rollNumber;
-    cout << "Enter your full name: ";
-    cin.ignore();
-    getline(cin, name);
-    cout << "Enter your roll number: ";
-    cin >> rollNumber;
+            cout << "\nEnter your full name: ";
+            cin.ignore();
+            getline(cin, name);
 
-    printProfile(name, rollNumber);
+            cout << "Enter your roll number: ";
+            cin >> rollNumber;
 
-    double grade1, grade2, grade3;
-    cout << "Enter three grades: ";
-    cin >> grade1 >> grade2 >> grade3;
+            printProfile(name, rollNumber);
+            break;
+            }
+ 	case 2: {
+            double grade1, grade2, grade3;
 
-    averageGrade(grade1, grade2, grade3);
+            cout << "Enter three grades: ";
+            cin >> grade1 >> grade2 >> grade3;
 
-    string language;
-    cout << "Enter preferred language: ";
-    cin >> language;
+            averageGrade(grade1, grade2, grade3);
+            break;
+             }
 
-    changeLanguage(language);
+        case 3: {
+            string language;
+
+            cout << "Enter preferred language: ";
+            cin >> language;
+
+            changeLanguage(language);
+            break;
+         	}
+
+        default:
+            cout << "Invalid choice." << endl;
+    	}
 
     cout << "Program finished successfully." << endl;
     return 0;
